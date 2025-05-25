@@ -1,0 +1,19 @@
+#game-map {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min(60vmin, 400px);
+    aspect-ratio: 1/1;
+}
+
+.square-cell {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.square-cell:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s ease;
+}
